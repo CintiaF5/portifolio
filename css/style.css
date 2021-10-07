@@ -1,6 +1,6 @@
 .body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   text-align: center;
   background-color: #e9e9e9;
 }
@@ -14,20 +14,21 @@
 
 #jb {
   background: rgba(255, 198, 12, 12);
+  margin: 0;
 }
 
 .infos-jb {
   font-family: 'Signika', sans-serif;
 }
 
-
 #profile {
-  height: 380px;
-  width: 380px;
+  height: 350px;
+  width: 350px;
 }
 
 .apresentacao{
   align-items: center;
+  font-size: 50px;
 }
 
 .inicio {
@@ -35,20 +36,40 @@
   padding-right: 0%;
 }
 
+#about-me {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #080527;
+  color: #e9e9e9;
+  padding-top: 50px;
+  font-family: 'Signika', sans-serif;
+  font-size: 30px;
+}
+
+.paper-plane {
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+}
+
 #formation {
-  height: 50px;
-  width: 50px;
-  margin-right: 100px;
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
 }
 
 #learn {
-  height: 50px;
-  width: 50px;
-  margin-right: 100px;
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
 }
 
 .about {
-  text-align: center; 
+  text-align: center;  
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 #airplane {
