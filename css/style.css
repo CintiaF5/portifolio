@@ -26,7 +26,7 @@
   width: 350px;
 }
 
-.apresentacao{
+.apresentacao {
   align-items: center;
   font-size: 50px;
 }
@@ -37,7 +37,7 @@
 }
 
 #about-me {
-  height: 100vh;
+  height: 90vh;
   position: relative;
   overflow: hidden;
   background-color: #080527;
@@ -67,7 +67,7 @@
 }
 
 .about {
-  text-align: center;  
+  text-align: center;
   margin-left: 100px;
   margin-right: 100px;
 }
@@ -90,6 +90,12 @@
   margin: 20px auto;
 }
 
+#dados {
+  height: 100px;
+  width: 100px;
+  margin: 20px auto;
+}
+
 .gmail-ico {
   height: 30px;
   width: 30px;
@@ -105,12 +111,23 @@
   width: 30 px;
 }
 
+.instagram-ico {
+  height: 30px;
+  width: 30 px;
+}
+
+.ico {
+  height: 20px;
+  width: 20 px;
+}
+
+
 li {
   display: inline-block;
   margin-top: 15px;
 }
 
-li a{
+li a {
   text-decoration: none;
   font-weight: bold;
   color: black;
@@ -118,29 +135,14 @@ li a{
   padding: 10px 30px;
 }
 
-li a:hover{
+li a:hover {
   transition: 1s;
   color: black;
   background: rgba(255, 255, 255, 0.7);
 }
 
-.galery {
-  width: 500px;
-  height: 500px;  
-}
 
-.galery .fotos {
-  width: 500%;
-  animation-name: animacao;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-}
-
-.galery .fotos img {
-  width: 19.9%;
-}
-
-.container{
+.container {
   position: relative;
   display: flex;
   justify-content: center;
@@ -150,7 +152,7 @@ li a:hover{
   z-index: 1;
 }
 
-.container .card{
+.container .card {
   position: relative;
   width: 600px;
   height: 380px;
@@ -166,33 +168,181 @@ li a:hover{
   border-left: 1px solid rgb(255, 255, 255, 0.5);
 }
 
-.container .card .content{
-  padding: 20px;
-  text-align: center;
-  transform: translateY(100px);
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.container .card:hover .content{
+.container .card:hover .content {
   transform: translateY(0px);
   opacity: 1;
 }
 
-.container .card .content .p{
+.container .card .content .p {
   font-size: 1em;
   font-weight: 300;
 }
 
 .container .card .content {
   position: relative;
-  display:inline-block;
-  padding:  8px 20px;
+  display: inline-block;
+  padding: 8px 20px;
   margin-top: 15px;
   background-color: #c2c2c2;
   text-decoration: none;
   border-radius: 20px;
   font-weight: 500;
-  box-shadow: 0 5px 15px rgba(0 ,0 ,0, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+.skill {
+  width: 500px;
+  margin: 60px auto;
+  color: black;
+  padding: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  text-align: left;
+}
+
+.skill li{
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.bar {
+  background: #353b48;
+  display: block;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.bar:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span{
+  height: 20px;
+  float: left;
+  background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%);
+}
+
+.html {
+  width: 30%;
+  animation: html 3s;
+}
+
+.css {
+  width: 30%;
+  animation: css 3s;
+}
+
+.javascript {
+  width: 20%;
+  animation: javascript 3s;
+}
+
+.powerbi {
+  width: 40%;
+  animation: powerbi 3s;
+}
+
+.scrum {
+  width: 75%;
+  animation: scrum 3s;
+}
+
+.comunicacao {
+  width: 70%;
+  animation: comunicacao 3s;
+}
+
+.equipe {
+  width: 70%;
+  animation: equipe 3s;
+}
+
+.ppt {
+  width: 70%;
+  animation: scrum 3s;
+}
+
+#certificados {
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #fcba04;
+  padding-top: 40px;
+  font-family: 'Signika', sans-serif;
+  font-size: 30px;
+}
+
+@keyframes html {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 30%;
+  }
+}
+
+@keyframes css {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 30%;
+  }
+}
+
+@keyframes javascript{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 20%;
+  }
+}
+
+@keyframes powerbi{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 40%;
+  }
+}
+
+@keyframes scrum{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 75%;
+  }
+}
+
+@keyframes comunicacao{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 70%;
+  }
+}
+
+@keyframes equipe{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 70%;
+  }
+}
+
+@keyframes ppt{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 70%;
+  }
+}
